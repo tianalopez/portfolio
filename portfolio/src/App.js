@@ -4,6 +4,21 @@ import {Container, Box, Grid, Typography, Link} from '@mui/material';
 import { NavLink } from "react-router-dom";
 
 function App() {
+
+  const handleDownload = () => {
+    const resumeUrl = '/resources/resume.pdf'
+    const link = document.createElement("a")
+    link.href = resumeUrl
+    link.download = "Tiana_Lopez_Resume.pdf"
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
+
+  const handleClick = () => {
+
+  }
+
   return (
     <Container maxWidth='lg'>
       <Box className='content'>
@@ -17,18 +32,20 @@ function App() {
             </Typography>
           </Grid>
           <Grid item xs={12} sx={{ ml: 4, mt: 1, pl: 0, flexDirection:'column', display:'flex' }}>
-            <NavLink className='link' to={'/'}>
+            <Typography  sx={{ml:1.5}}>•••</Typography>
+            <NavLink className='link' to={'/'} onClick={handleClick}>
               Home
             </NavLink>
             <NavLink className='link' to={'/portfolio'}>
               Portfolio
             </NavLink >
-            <NavLink className='link'>
-              Resume
+            <NavLink className='link' onClick={handleDownload}>
+              Resume (Download)
             </NavLink>
             <NavLink className='link' to={'/contact'}>
               Contact
             </NavLink>
+            <Typography sx={{ml:1.5}}>•••</Typography>
           </Grid>
         </Grid>
       </Box>
