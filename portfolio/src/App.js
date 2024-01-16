@@ -48,6 +48,33 @@ function App() {
             <Typography sx={{ml:1.5}}>•••</Typography>
           </Grid>
         </Grid>
+        <Grid
+          container
+          spacing={2}
+          sx={{
+            mb: 4,
+            mr: 4,
+            position: 'absolute',
+            bottom: 0,
+            right: 0,
+            textAlign: 'right',
+            justifyContent: 'flex-end',
+            alignItems: 'flex-end',
+            maxWidth: '25rem', // Set a maximum width for the text container
+            [theme => theme.breakpoints.down('xs')]: {
+              textAlign: 'center',
+              justifyContent: 'center',
+              alignItems: 'center',
+              maxWidth: '70%', // Adjust the max-width for mobile view
+            },
+          }}
+        >
+          <Grid item xs={12}>
+            <Typography fontFamily='Playfair Display' sx={{ textAlign: 'right' }}>
+              I'm a full-stack software engineer with skills in Javascript (React), Python (Flask), HTML, and CSS. I'm passionate about learning and always looking to challenge myself. What excites me the most is using my skills to create innovative applications that make a positive impact. Let's connect and build something awesome together!
+            </Typography>
+          </Grid>
+        </Grid>
       </Box>
     </Container>
   );

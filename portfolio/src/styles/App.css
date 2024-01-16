@@ -12,6 +12,20 @@
   flex-direction: column;
 }
 
+.flex-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 94%;
+    height: 90%;
+    border: 1px solid #6B9080;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    flex-direction: column;
+}
+
 .link {
   font-family: 'Playfair Display', serif;
   margin-left: 10px;
