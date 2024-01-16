@@ -7,11 +7,14 @@
   height: 90%;
   border: 1px solid #6B9080;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
 }
 
-.header {
+.link {
+  font-family: 'Playfair Display', serif;
+  margin-left: 10px;
+  margin: 5px 0 5px 10px;
 
 }
