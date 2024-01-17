@@ -49,25 +49,20 @@ function App() {
           </Grid>
         </Grid>
         <Grid
+          className='flex-content'
           container
           spacing={2}
-          sx={{
-            mb: 4,
-            mr: 4,
-            position: 'absolute',
-            bottom: 0,
-            right: 0,
-            textAlign: 'right',
-            justifyContent: 'flex-end',
-            alignItems: 'flex-end',
-            maxWidth: '25rem', // Set a maximum width for the text container
-            [theme => theme.breakpoints.down('xs')]: {
-              textAlign: 'center',
-              justifyContent: 'center',
-              alignItems: 'center',
-              maxWidth: '70%', // Adjust the max-width for mobile view
-            },
-          }}
+          // sx={{
+          //   mb: 4,
+          //   mr: 4,
+          //   position: 'absolute',
+          //   bottom: 0,
+          //   right: 0,
+          //   textAlign: 'right',
+          //   justifyContent: 'flex-end',
+          //   alignItems: 'flex-end',
+          //   maxWidth: '25rem',
+          // }}
         >
           <Grid item xs={12}>
             <Typography fontFamily='Playfair Display' sx={{ textAlign: 'right' }}>

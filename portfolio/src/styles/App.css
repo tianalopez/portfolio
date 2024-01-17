@@ -13,17 +13,25 @@
 }
 
 .flex-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 94%;
-    height: 90%;
-    border: 1px solid #6B9080;
-    display: flex;
-    justify-content: right;
-    align-items: right;
-    flex-direction: column;
+        margin-bottom: 40px;
+        margin-right: 40px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        text-align: right;
+        justify-content: flex-end;
+        align-items: flex-end;
+        max-width: 25rem
+}
+
+@media (max-width: 600px) {
+  .flex-content {
+    text-align: center;
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+    max-width: 15rem;
+  }
 }
 
 .link {
