@@ -1,0 +1,21 @@
+.portfolio {
+  margin-bottom: 40px;
+  margin-right: 40px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  justify-content: flex-end;
+  align-items: flex-end;
+  max-width: 25rem
+}
+
+@media (max-width: 600px) {
+  .portfolio {
+    text-align: center;
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+    max-width: 15rem;
+  }
+}
