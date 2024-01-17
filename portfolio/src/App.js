@@ -2,6 +2,7 @@
 import './styles/App.css';
 import {Container, Box, Grid, Typography,} from '@mui/material';
 import { NavLink, Outlet } from "react-router-dom";
+import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
 
 function App() {
 
@@ -41,6 +42,7 @@ function App() {
             </NavLink >
             <NavLink className='link' onClick={handleDownload}>
               Resume
+              <FileDownloadOutlinedIcon sx={{ color: '#232F2A', ml: 0.5 }} />
             </NavLink>
             <NavLink className='link' to={'/contact'}>
               Contact

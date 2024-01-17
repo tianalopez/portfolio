@@ -80,6 +80,7 @@
   color:#232F2A;
   position: relative;
   transition: color .3s ease-in-out;
+  display: flex;
 }
 
 .link:focus {
