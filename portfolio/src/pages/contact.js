@@ -14,6 +14,8 @@ const Contact = () => {
         <Grid container spacing={2} sx={{ alignItems: 'center', display: 'flex', justifyContent: 'center' }}>
           <span className='me'>
             <img className='img-me' alt='Tiana holding baby goat' src='/images/me.png'></img>
+            {/* <img className='img-me' alt='Tiana holding baby goat' src='/images/subject.png'></img> */}
+            {/* <img className='img-me' alt='Tiana holding baby goat' src='/images/me.png'></img> */}
           </span>
         </Grid>
         <Grid className='portfolio' container spacing={2} sx={{ width: 'fit-content', display: 'flex', flexDirection: 'column' }}>

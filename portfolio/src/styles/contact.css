@@ -24,21 +24,22 @@ div.me-container {
   right: 0;
   height: 30rem;
   width: 30rem;
-  background-color: #D7ACA4;
+  background-color: rgba(215,172,164, 0.65);
   border-radius: 50%;
   display: flex;
   margin-bottom: 15px;
   margin-right: 15px;
-  opacity: 0.65;
   z-index: 0;
   text-align: center;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0 20px rgba(215, 172, 164, 0.805);
 }
 
 img {
   height: 20rem;
   z-index: 1;
+
 }
 
 @media (max-width: 600px) {
@@ -46,6 +47,8 @@ img {
     height: 20rem;
     width: 20rem;
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   img {
