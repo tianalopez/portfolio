@@ -11,6 +11,7 @@ div.portfolio {
 
 div.proj-grid {
   text-align: right;
+  z-index: 2;
 }
 
 @media (max-width: 600px) {
@@ -30,14 +31,14 @@ div.proj-grid {
 a.proj-link {
   font-family: 'Playfair Display', serif;
   text-decoration: none;
-  color: #232F2A;
+  color: black;
   position: relative;
   margin: 0;
   transition: color .3s ease-in-out;
 }
 
-.proj-link:hover {
-  color: #A4C3B2;
+a.proj-link:hover {
+  color: #456C73;
 }
 
 p.tech {
@@ -45,7 +46,7 @@ p.tech {
   width: 500px;
   max-width: 500px;
   text-align: right;
-  color: #476055
+  color: #334747
 }
 
 p.tech {

@@ -24,7 +24,7 @@ function App() {
     <Container maxWidth='lg'>
       <Box className='content'>
         <Grid container spacing={2} sx={{ alignItems: 'top' }}>
-          <Grid item xs={12} sx={{ ml: 4, mt: 4, pl: 0, width: 'fit-content' }}>
+          <Grid className='content-grid' item xs={12} sx={{ ml: 4, mt: 4, pl: 0, width: 'fit-content' }}>
             <Typography sx={{fontSize: {lg: '3.2rem', md: '3.0rem', sm: '2.5rem',xs: '2rem'}}} fontFamily='Kalnia' fontWeight='300'>
               TIANA LOPEZ
             </Typography>
@@ -32,7 +32,7 @@ function App() {
               Full-Stack Software Engineer
             </Typography>
           </Grid>
-          <Grid item xs={12} sx={{ ml: 4, mt: 1, pl: 0, width:'fit-content', flexDirection:'column', display:'flex' }}>
+          <Grid className='content-grid' item xs={12} sx={{ ml: 4, mt: 1, pl: 0, width:'fit-content', flexDirection:'column', display:'flex' }}>
             <Typography  sx={{ml:1.5}}>•••</Typography>
             <NavLink className='link' to={'/'} onClick={handleClick}>
               Home
@@ -51,6 +51,11 @@ function App() {
           </Grid>
         </Grid>
         <Outlet />
+      {/* <Box className='color-mode'>
+        <Grid>
+        test
+        </Grid>
+      </Box> */}
       </Box>
     </Container>
   );

@@ -6,6 +6,50 @@
   transform: translate(-50%, -50%);
   width: 94%;
   height: 90%;
+  /* border: 1px solid #456C73; */
+  border: thick double #456C73;
+  box-shadow: 0 0 20px rgba(69, 108, 115, 0.4);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-image: url('/public/images/clouds.jpeg');
+  background-size: 100% 100%;
+  opacity: 0.6;
+  animation: moveBackground 20s linear infinite alternate;
+}
+
+@keyframes moveBackground {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+
+}
+
+div.content-grid {
+  position: relative;
+  z-index:2;
+}
+/* .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 94%;
+  height: 90%;
   border: 1px solid #6B9080;
   display: flex;
   align-items: flex-start;
@@ -15,6 +59,7 @@
   -webkit-animation: dotAnimate 10s ease infinite;
   animation: dotAnimate 10s ease infinite;
 }
+
 
 @-webkit-keyframes dotAnimate {
   0% {
@@ -42,7 +87,7 @@
   100% {
     background-position: 0% 50%;
   }
-}
+} */
 
 
 .flex-content {
@@ -71,6 +116,13 @@
     min-height: 90%;
     min-width: 94%;
   }
+
+  div.color-mode {
+    position: absolute;
+    left: -40px;
+    bottom: -50px;
+    padding-bottom: 10px;
+  }
 }
 
 .link {
@@ -78,17 +130,26 @@
   margin-left: 10px;
   margin: 5px 0 5px 10px;
   text-decoration: none;
-  color:#232F2A;
+  color:black;
   position: relative;
   transition: color .3s ease-in-out;
   display: flex;
+  z-index: 2;
 }
 
 .link:focus {
   font-style: italic;
-  color: #A4C3B2;
+  color: #456C73;
 }
 
 .link:hover {
-  color: #A4C3B2;
+  color: #456C73;
+}
+
+.color-mode {
+  position: absolute;
+  left: 0;
+  margin-left: 40px;
+  bottom: 0;
+  margin-bottom: 15px;
 }

@@ -15,7 +15,7 @@ const Portfolio = () => {
 
   const visibleProjects = projects.map((project) => (
       <Grid key={project.id} className='proj-grid' item xs={12} sx={{width:'fit-content', textAlign:'right'}}>
-        <Link href={project.url} sx={{width: 'auto'}}className='proj-link'>
+        <Link target='_blank' href={project.url} sx={{width: 'auto'}}className='proj-link'>
           <Typography
           fontFamily='Playfair Display'
           fontWeight='200'
@@ -41,7 +41,7 @@ const Portfolio = () => {
 
   return (
     <Container  maxWidth='lg'>
-      <Box>
+      <Box className='port-container'>
         <Grid className='portfolio' container spacing={2} sx={{ width:'fit-content',display: 'flex', flexDirection:'column'}}>
           {visibleProjects}
         </Grid>
