@@ -19,15 +19,15 @@ const Contact = () => {
           </span>
         </Grid>
         <Grid className='portfolio' container spacing={2} sx={{ width: 'fit-content', display: 'flex', flexDirection: 'column' }}>
-          <Link href={'https://www.linkedin.com/in/tiana-lopez-728863180/'} className='contact-link'>
+          <Link target='_blank' href={'https://www.linkedin.com/in/tiana-lopez-728863180/'} className='contact-link'>
               LinkedIn
               <CallMadeOutlinedIcon sx={{ color: '#232F2A', ml: 0.5 }}/>
           </Link>
-          <Link href={'https://github.com/tianalopez'} className='contact-link'>
+          <Link target='_blank' href={'https://github.com/tianalopez'} className='contact-link'>
               Github
               <CallMadeOutlinedIcon sx={{ color: '#232F2A', ml: 0.5 }}/>
           </Link>
-          <Link href={'https://tianalopez.hashnode.dev/'} className='contact-link'>
+          <Link target='_blank' href={'https://tianalopez.hashnode.dev/'} className='contact-link'>
               Blog
               <CallMadeOutlinedIcon sx={{ color: '#232F2A', ml: 0.5 }}/>
           </Link>
