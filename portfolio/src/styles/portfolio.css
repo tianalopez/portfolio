@@ -30,7 +30,7 @@ div.proj-grid {
 a.proj-link {
   font-family: 'Playfair Display', serif;
   text-decoration: none;
-  color: #232F2A;
+  color: #334747;
   position: relative;
   margin: 0;
   transition: color .3s ease-in-out;
@@ -45,7 +45,7 @@ p.tech {
   width: 500px;
   max-width: 500px;
   text-align: right;
-  color: #476055
+  color: #456C73
 }
 
 p.tech {
