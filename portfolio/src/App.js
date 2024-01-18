@@ -32,7 +32,7 @@ function App() {
               Full-Stack Software Engineer
             </Typography>
           </Grid>
-          <Grid item xs={12} sx={{ ml: 4, mt: 1, pl: 0, width:'fit-content', flexDirection:'column', display:'flex' }}>
+          <Grid className='content-grid' item xs={12} sx={{ ml: 4, mt: 1, pl: 0, width:'fit-content', flexDirection:'column', display:'flex' }}>
             <Typography  sx={{ml:1.5}}>•••</Typography>
             <NavLink className='link' to={'/'} onClick={handleClick}>
               Home

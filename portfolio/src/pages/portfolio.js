@@ -15,7 +15,7 @@ const Portfolio = () => {
 
   const visibleProjects = projects.map((project) => (
       <Grid key={project.id} className='proj-grid' item xs={12} sx={{width:'fit-content', textAlign:'right'}}>
-        <Link href={project.url} sx={{width: 'auto'}}className='proj-link'>
+        <Link target='_blank' href={project.url} sx={{width: 'auto'}}className='proj-link'>
           <Typography
           fontFamily='Playfair Display'
           fontWeight='200'

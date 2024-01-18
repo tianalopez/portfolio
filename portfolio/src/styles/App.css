@@ -6,7 +6,9 @@
   transform: translate(-50%, -50%);
   width: 94%;
   height: 90%;
-  border: 1px solid #456C73;
+  /* border: 1px solid #456C73; */
+  border: thick double #456C73;
+  box-shadow: 0 0 20px rgba(69, 108, 115, 0.4);
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -37,9 +39,9 @@
 
 }
 
-.content-grid {
+div.content-grid {
   position: relative;
-  z-index:-1;
+  z-index:2;
 }
 /* .content {
   position: absolute;
@@ -128,10 +130,11 @@
   margin-left: 10px;
   margin: 5px 0 5px 10px;
   text-decoration: none;
-  color:#334747;
+  color:black;
   position: relative;
   transition: color .3s ease-in-out;
   display: flex;
+  z-index: 2;
 }
 
 .link:focus {
