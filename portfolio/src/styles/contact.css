@@ -1,0 +1,10 @@
+.contact-link {
+  font-family: 'Playfair Display', serif;
+    margin-left: 10px;
+    margin: 5px 0 5px 10px;
+    text-decoration: none;
+    color: #232F2A;
+    position: relative;
+    transition: color .3s ease-in-out;
+    display: flex;
+}
