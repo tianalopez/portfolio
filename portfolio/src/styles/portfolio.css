@@ -1,0 +1,59 @@
+
+
+div.portfolio {
+  margin-bottom: 20px;
+  margin-right: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  align-items: flex-end;
+}
+
+div.proj-grid {
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  div.portfolio {
+    text-align: center;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 20rem;
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+a.proj-link {
+  font-family: 'Playfair Display', serif;
+  text-decoration: none;
+  color: #232F2A;
+  position: relative;
+  margin: 0;
+  transition: color .3s ease-in-out;
+}
+
+.proj-link:hover {
+  color: #A4C3B2;
+}
+
+p.tech {
+  font-family: 'Playfair Display', serif;
+  width: 500px;
+  max-width: 500px;
+  text-align: right;
+  color: #476055
+}
+
+p.tech {
+  font-family: 'Playfair Display', serif;
+  max-width: 100%;
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+  text-align: right;
+}

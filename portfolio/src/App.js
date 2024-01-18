@@ -1,7 +1,8 @@
 
 import './styles/App.css';
-import {Container, Box, Grid, Typography} from '@mui/material';
+import {Container, Box, Grid, Typography,} from '@mui/material';
 import { NavLink, Outlet } from "react-router-dom";
+import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
 
 function App() {
 
@@ -22,8 +23,8 @@ function App() {
   return (
     <Container maxWidth='lg'>
       <Box className='content'>
-        <Grid container spacing={2} sx={{alignItems:'top'}}>
-          <Grid item xs={12} sx={{ml: 4, mt:4, pl:0}}>
+        <Grid container spacing={2} sx={{ alignItems: 'top' }}>
+          <Grid item xs={12} sx={{ ml: 4, mt: 4, pl: 0, width: 'fit-content' }}>
             <Typography sx={{fontSize: {lg: '3.2rem', md: '3.0rem', sm: '2.5rem',xs: '2rem'}}} fontFamily='Kalnia' fontWeight='300'>
               TIANA LOPEZ
             </Typography>
@@ -31,7 +32,7 @@ function App() {
               Full-Stack Software Engineer
             </Typography>
           </Grid>
-          <Grid item xs={12} sx={{ ml: 4, mt: 1, pl: 0, flexDirection:'column', display:'flex' }}>
+          <Grid item xs={12} sx={{ ml: 4, mt: 1, pl: 0, width:'fit-content', flexDirection:'column', display:'flex' }}>
             <Typography  sx={{ml:1.5}}>•••</Typography>
             <NavLink className='link' to={'/'} onClick={handleClick}>
               Home
@@ -40,7 +41,8 @@ function App() {
               Portfolio
             </NavLink >
             <NavLink className='link' onClick={handleDownload}>
-              Resume (Download)
+              Resume
+              <FileDownloadOutlinedIcon sx={{ color: '#232F2A', ml: 0.5 }} />
             </NavLink>
             <NavLink className='link' to={'/contact'}>
               Contact
