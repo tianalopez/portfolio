@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Container, Grid, Box, Typography, Link } from '@mui/material';
 import "../styles/portfolio.css";
 import CallMadeOutlinedIcon from '@mui/icons-material/CallMadeOutlined';
-import "../styles/contact.css"
+import "../styles/contact.css";
+
 
 const Contact = () => {
   const email = 'lopez.y.tiana@gmail.com';
@@ -10,6 +11,11 @@ const Contact = () => {
   return (
     <Container maxWidth='lg'>
       <Box>
+        <Grid container spacing={2} sx={{ alignItems: 'center', display: 'flex', justifyContent: 'center' }}>
+          <span className='me'>
+            <img className='img-me' alt='Tiana holding baby goat' src='/images/me.png'></img>
+          </span>
+        </Grid>
         <Grid className='portfolio' container spacing={2} sx={{ width: 'fit-content', display: 'flex', flexDirection: 'column' }}>
           <Link href={'https://www.linkedin.com/in/tiana-lopez-728863180/'} className='contact-link'>
               LinkedIn

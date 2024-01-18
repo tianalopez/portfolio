@@ -11,7 +11,7 @@ div.portfolio {
 
 div.proj-grid {
   text-align: right;
-  z-index: 3;
+  z-index: 2;
 }
 
 @media (max-width: 600px) {
