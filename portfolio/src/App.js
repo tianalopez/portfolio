@@ -59,7 +59,14 @@ function App() {
       <Box className='logo-link'>
         <Grid container spacing={2}>
         <Grid item xs={12}>
-          <Link>
+          <Link className='logo' target='_blank' href={'https://www.linkedin.com/in/tiana-lopez-728863180/'}>
+            <LinkedInIcon sx={{ color: '#456C73'}}/>
+          </Link>
+          <Link className='logo' target='_blank' href={'https://github.com/tianalopez'}>
+            <GitHubIcon sx={{ color: '#456C73'}}/>
+          </Link>
+          <Link className='logo' target='_blank' href={'https://tianalopez.hashnode.dev/'}>
+            <RssFeedIcon sx={{ color: '#456C73'}}/>
           </Link>
         </Grid>
         </Grid>
