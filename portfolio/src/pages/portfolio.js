@@ -41,7 +41,9 @@ const Portfolio = () => {
 
   return (
     <Container  maxWidth='lg'>
-      <Box className='port-container'>
+      <Box
+      className='port-container'
+      >
         <Grid className='portfolio' container spacing={2} sx={{ width:'fit-content',display: 'flex', flexDirection:'column'}}>
           {visibleProjects}
         </Grid>
