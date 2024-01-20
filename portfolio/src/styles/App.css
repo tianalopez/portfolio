@@ -146,10 +146,15 @@ div.content-grid {
   color: #456C73;
 }
 
-.color-mode {
+.logo-link {
   position: absolute;
   left: 0;
-  margin-left: 40px;
+  margin-left: 45px;
   bottom: 0;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
+  z-index: 3;
+}
+
+a.logo {
+  margin-right: 10px;
 }

@@ -8,6 +8,10 @@ a.contact-link {
   transition: color .3s ease-in-out;
   display: flex;
 }
+
+a.contact-link:hover {
+  color: #456C73;
+}
 /*
 div.me-container {
   position: relative;
