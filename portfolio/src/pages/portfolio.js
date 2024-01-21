@@ -4,8 +4,7 @@ import "../styles/portfolio.css"
 
 const Portfolio = () => {
   const [projects, setProjects] = useState([]);
-  const [pop, setPop] = useState(false);
-  const [anchorPosition, setAnchorPosition] = useState({ top: 0, left: 0 });
+  const [anchorEl, setAnchorEl] = useState(null);
 
   //fetch data from db.json
   useEffect(() => {
@@ -15,19 +14,23 @@ const Portfolio = () => {
       .catch((err) => alert(err));
   }, []);
 
+
+
   const handlePopoverOpen = (event) => {
-    const { top, left, height } = event.currentTarget.getBoundingClientRect();
-    setAnchorPosition({ top: top + height, left });
-    setPop(true);
+    setAnchorEl(event.currentTarget);
   };
 
   const handlePopoverClose = () => {
-    setPop(false);
+    setAnchorEl(null);
   };
+
+  const open = Boolean(anchorEl);
 
   const visibleProjects = projects.map((project) => (
       <Grid key={project.id} className='proj-grid' item xs={12} sx={{width:'fit-content', textAlign:'right'}}>
         <Link
+          aria-owns={open ? 'mouse-over-popover' : undefined}
+          aria-haspopup="true"
           onMouseEnter={handlePopoverOpen}
           onMouseLeave={handlePopoverClose}
           target='_blank' href={project.url} sx={{width: 'auto'}}className='proj-link'>
@@ -52,19 +55,24 @@ const Portfolio = () => {
           {project.tech}
         </Typography>
       <Popover
-        open={pop}
-        anchorPosition={anchorPosition}
-        onClose={handlePopoverClose}
+        id="mouse-over-popover"
+        sx={{
+          pointerEvents: 'none',
+        }}
+        open={open}
+        anchorEl={anchorEl}
         anchorOrigin={{
           vertical: 'bottom',
-          horizontal: 'center',
+          horizontal: 'left',
         }}
         transformOrigin={{
           vertical: 'top',
-          horizontal: 'center',
+          horizontal: 'left',
         }}
+        onClose={handlePopoverClose}
+        disableRestoreFocus
       >
-        Test
+        <Typography sx={{ p: 1 }}>I use Popover.</Typography>
       </Popover>
       </Grid>
   ));
