@@ -54,7 +54,7 @@ const Portfolio = () => {
           >
           {project.tech}
         </Typography>
-      <Popover
+      {/* <Popover
         id="mouse-over-popover"
         sx={{
           pointerEvents: 'none',
@@ -73,7 +73,7 @@ const Portfolio = () => {
         disableRestoreFocus
       >
         <Typography sx={{ p: 1 }}>I use Popover.</Typography>
-      </Popover>
+      </Popover> */}
       </Grid>
   ));
 
