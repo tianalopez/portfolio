@@ -1,12 +1,36 @@
+.port-content {
+  /* position: absolute; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 94%;
+  height: 90%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow: hidden;
+}
 
-
-div.portfolio {
+/* div.portfolio {
   margin-bottom: 20px;
   margin-right: 20px;
   position: absolute;
   bottom: 0;
   right: 0;
   align-items: flex-end;
+} */
+
+div.portfolio {
+  margin-bottom: 40px;
+  margin-right: 40px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  justify-content: flex-end;
+  align-items: flex-end;
+  /* max-width: 25rem */
+  overflow: scroll;
 }
 
 div.proj-grid {
@@ -15,7 +39,14 @@ div.proj-grid {
 }
 
 @media (max-width: 600px) {
-  div.portfolio {
+  .port-content {
+    height: auto;
+    min-height: 90%;
+    min-width: 94%;
+    overflow: scroll;
+  }
+
+  /* div.portfolio {
     text-align: center;
     margin-top: 20px;
     justify-content: center;
@@ -24,7 +55,27 @@ div.proj-grid {
     position:relative;
     margin-left: auto;
     margin-right: auto;
+  } */
+
+  div.portfolio {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 15rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    bottom: 0;
+    height: 40%;
+    flex-direction: column;
+    display: flex;
   }
+
+  /* a.proj-link {
+    text-align: center;
+  }
+  p.tech {
+    text-align: center;
+  } */
 
 }
 
@@ -35,6 +86,7 @@ a.proj-link {
   position: relative;
   margin: 0;
   transition: color .3s ease-in-out;
+  text-align: right;
 }
 
 a.proj-link:hover {
