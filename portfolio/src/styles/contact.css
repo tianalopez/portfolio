@@ -1,3 +1,16 @@
+div.contact-me {
+margin-bottom: 40px;
+  margin-right: 40px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  justify-content: flex-end;
+  align-items: flex-end;
+  /* max-width: 25rem */
+  overflow: scroll;
+}
+
 a.contact-link {
   font-family: 'Playfair Display', serif;
   margin-left: 10px;
@@ -58,4 +71,18 @@ img {
   img {
     height: 15rem;
   }
+
+    div.contact-me {
+      /* position:sticky; */
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      max-width: 80%;
+      /* overflow-y: auto; */
+      /* overflow-x: hidden; */
+      bottom: 0;
+      height: 40%;
+      /* flex-direction: column;
+      display: flex; */
+    }
 }
