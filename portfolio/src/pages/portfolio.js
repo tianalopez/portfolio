@@ -8,7 +8,7 @@ const Portfolio = () => {
 
   //fetch data from db.json
   useEffect(() => {
-    fetch('http://localhost:3000/projects')
+    fetch('/projects')
       .then((r) => r.json())
       .then(setProjects)
       .catch((err) => alert(err));
