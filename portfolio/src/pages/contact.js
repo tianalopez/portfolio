@@ -16,7 +16,7 @@ const Contact = () => {
             <img className='img-me' alt='Tiana holding baby goat' src='/images/me.png'></img>
           </span>
         </Grid>
-        <Grid className='portfolio' container spacing={2} sx={{ width: 'fit-content', display: 'flex', flexDirection: 'column' }}>
+        <Grid className='contact-me' container spacing={2} sx={{ width: 'fit-content', display: 'flex', flexDirection: 'column' }}>
           <Link target='_blank' href={'https://www.linkedin.com/in/tiana-lopez-728863180/'} className='contact-link'>
               LinkedIn
               <CallMadeOutlinedIcon sx={{ color: '#232F2A', ml: 0.5 }}/>
