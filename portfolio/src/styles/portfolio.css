@@ -61,13 +61,13 @@ div.proj-grid {
     text-align: center;
     justify-content: center;
     align-items: center;
-    max-width: 15rem;
-    overflow-y: auto;
-    overflow-x: hidden;
+    max-width: 80%;
+    /* overflow-y: auto;
+    overflow-x: hidden; */
     bottom: 0;
     height: 40%;
-    flex-direction: column;
-    display: flex;
+    /* flex-direction: column;
+    display: flex; */
   }
 
   /* a.proj-link {
