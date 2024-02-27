@@ -37,7 +37,7 @@ function App() {
             </Typography>
           </Grid>
           <Grid className='content-grid' item xs={12} sx={{ ml: 4, mt: 1, pl: 0, width:'fit-content', flexDirection:'column', display:'flex' }}>
-            <Typography  sx={{ml:1.5}}>•••</Typography>
+            <Typography  sx={{ml:1.5, width:'fit-content'}}>•••</Typography>
             <NavLink className='link' to={'/'} onClick={handleClick}>
               Home
             </NavLink>
