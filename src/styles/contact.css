@@ -20,6 +20,7 @@ a.contact-link {
   position: relative;
   transition: color .3s ease-in-out;
   display: flex;
+  z-index: 2;
 }
 
 a.contact-link:hover {
