@@ -9,6 +9,7 @@ margin-bottom: 40px;
   align-items: flex-end;
   /* max-width: 25rem */
   overflow: scroll;
+  
 }
 
 a.contact-link {
@@ -65,25 +66,36 @@ img {
     height: 20rem;
     width: 20rem;
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto 15px; /* Center the image */
   }
 
   img {
     height: 15rem;
+    display: none;
   }
 
     div.contact-me {
       /* position:sticky; */
+      /* position:relative; */
+      position:absolute;
       text-align: center;
       justify-content: center;
       align-items: center;
       max-width: 80%;
       /* overflow-y: auto; */
       /* overflow-x: hidden; */
+      /* top:calc(100% + 20px); */
+      right:auto;
       bottom: 0;
-      height: 40%;
-      /* flex-direction: column;
+      height: 30%;
+      margin: 0 auto;
+      transform: translate(0%, -50%);
+      /* flex-direction: row;
       display: flex; */
     }
 }
