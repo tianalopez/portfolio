@@ -1,18 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Grid, Box, Typography, Link, Popover } from '@mui/material';
 import "../styles/portfolio.css"
+import projectsData from '../data/projectsData';
 
 const Portfolio = () => {
-  const [projects, setProjects] = useState([]);
+  const [projects, setProjects] = useState(projectsData);
   const [anchorEl, setAnchorEl] = useState(null);
 
   //fetch data from db.json
-  useEffect(() => {
-    fetch('http://localhost:3000/projects')
-      .then((r) => r.json())
-      .then(setProjects)
-      .catch((err) => alert(err));
-  }, []);
+  // useEffect(() => {
+  //   fetch('http://localhost:3000/projects')
+  //     .then((r) => r.json())
+  //     .then(setProjects)
+  //     .catch((err) => alert(err));
+  // }, []);
 
 
 
