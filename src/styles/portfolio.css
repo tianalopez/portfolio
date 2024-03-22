@@ -30,7 +30,11 @@ div.portfolio {
   justify-content: flex-end;
   align-items: flex-end;
   /* max-width: 25rem */
-  overflow: scroll;
+  overflow: hidden;
+}
+
+div.portfolio::-webkit-scrollbar {
+  background-color: transparent;
 }
 
 div.proj-grid {
