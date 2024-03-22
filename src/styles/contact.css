@@ -12,6 +12,10 @@ margin-bottom: 40px;
   
 }
 
+div.contact-me::-webkit-scrollbar {
+  background-color: transparent;
+}
+
 a.contact-link {
   font-family: 'Playfair Display', serif;
   margin-left: 10px;

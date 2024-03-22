@@ -43,7 +43,7 @@ div.content-grid {
   position: relative;
   z-index:2;
   /* height: 100%; */
-  overflow: scroll;
+  overflow: hidden;
 }
 /* .content {
   position: absolute;
@@ -120,6 +120,10 @@ div.content-grid {
     min-width: 94%;
     z-index: 2;
     overflow-y: scroll;
+  }
+
+  .content-grid {
+    overflow:scroll;
   }
 
   div.logo-link {
