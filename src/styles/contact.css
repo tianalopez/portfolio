@@ -8,13 +8,13 @@ margin-bottom: 40px;
   justify-content: flex-end;
   align-items: flex-end;
   /* max-width: 25rem */
-  overflow: scroll;
+  overflow: hidden;
   
 }
 
-div.contact-me::-webkit-scrollbar {
+/* div.contact-me::-webkit-scrollbar {
   background-color: transparent;
-}
+} */
 
 a.contact-link {
   font-family: 'Playfair Display', serif;
