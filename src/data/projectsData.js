@@ -2,7 +2,7 @@ const projectsData = [
     {
       id: 1,
       title: "TEA Culture",
-      url: "https://teaculture.onrender.com/",
+      url: "https://github.com/tianalopez/teaculture",
       date: "December 2023",
       tech: "JavaScript (React), Material-UI, Python (Flask, SQLAlchemy), RESTful API, SQLAlchemy-Serializer, Marshmallow, Formik, Yup, Postman, Bcrypt, PostgreSQL, Google APIs (Google-Auth, Requests)"
     },
@@ -35,5 +35,5 @@ const projectsData = [
       tech: "Javascript, HTML, CSS, Bootstrap"
     }
   ];
-  
+
   export default projectsData;
